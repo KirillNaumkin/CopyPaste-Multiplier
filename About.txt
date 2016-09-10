@@ -1,0 +1,23 @@
+HOW IT WORKS
+• Copy settings as usual (Shift+RMB)
+• Set desired Multiplier if needed (by default it's 1, e.g. standard count will be pasted)
+• Paste settings as usual (Shift+LMB) - standard requested count is multiplied with the Multiplier
+
+EXAMPLE:
+Assembling machine requires 1 iron plate and 1 copper plate for it's recipe. When you copy-poste settings from this machine to requester chest, it's 4 iron plates and 4 copper plates requested (vanilla behaviour). If you set 5 for multiplier's value and paste settings, then 20 plates of each type will be requested (standard count * multiplier). If you copy settings from chest to chest with multiplier = 5, then destination chest will request 5 times more than source chest.
+
+KNOWN ISSUES
+• If inventory is opened, request slots will not be visually updated (reopening does visual update), see https://forums.factorio.com/viewtopic.php?f=25&t=31696#p199826
+
+VERSIONS HISTORY
+2016-09-02, 0.1.0:
+• Proof of concept.
+
+2016-09-03, 0.1.1:
+• Default multiplier is changed to 1 (for vanilla behaviour).
+
+2016-09-04, 0.1.2:
+• Now configurable: mod can multiply either vanilla destination count or source count. See config.
+
+2016-09-09, 0.1.3:
+• fixed: now it's impossible to input non-integer values into textfields.
